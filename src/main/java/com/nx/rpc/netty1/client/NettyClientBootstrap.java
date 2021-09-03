@@ -15,7 +15,6 @@ public class NettyClientBootstrap {
         // 获取一个服务端 服务对象的代理对象
         Class serviceClass = DateTimeService.class;
         DateTimeService dateTimeServiceProxy = (DateTimeService)client.getProxy(serviceClass);
-
         // 调用服务
         String result = dateTimeServiceProxy.hello("huangbo");
         // 输出结果
